@@ -2,7 +2,7 @@
 
 const express = require('express');
 const router = express.Router();
-const controller = require('../controllers/transaction')
+const controller = require('../controllers/transaction');
 
 router.post('/', controller.post);
 

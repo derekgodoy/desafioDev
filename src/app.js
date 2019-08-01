@@ -13,7 +13,7 @@ const transactionRoute = require('./routes/transaction-route');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/', mdrRoute);
+app.use('/mdr', mdrRoute);
 app.use('/transaction', transactionRoute);
 
 module.exports = app;
